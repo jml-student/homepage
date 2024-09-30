@@ -15,6 +15,7 @@
 body {
     display: flex;
     flex-direction: column;
+    align-items: center;
     font-family:
         system-ui,
         -apple-system,
@@ -57,10 +58,18 @@ header {
 
 .about {
     background-color: var(--main-white);
+
+    & p {
+        max-width: 70ch;
+    }
 }
 
 main {
     padding: var(--main-padding);
+}
+
+.title {
+    align-self: start;
 }
 
 footer {
